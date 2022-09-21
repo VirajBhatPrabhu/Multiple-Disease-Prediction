@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>BrainStroke</title>
+    <link rel="stylesheet" href="../static/nicepage.css" media="screen">
+<link rel="stylesheet" href="../static/BrainStroke.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.18.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="BrainStroke">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <section id="prediction-form">
+        <form class="form" style="width: 70%; margin-left : 15%" action="/predictbs", method="POST">
+            <h1 class="my-3 text-center" style="color:SlateBlue;"><b>Brain Stroke Predictor</b></h1>
+            <div class="row">
+                <p><h5 style="text-align: center; font-family: Georgia, serif">Please enter your details</h5></p>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="age" class="age">Age</label>
+                        <input type="number" step="1" class="form-control" id="age" name="age" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="avg_glucose_level" class="avg_glucose_level">Average Glucose Level</label>
+                        <input type="number" step="0.01" class="form-control" id="avg_glucose_level" name="avg_glucose_level" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="bmi" class="bmi">Body Mass Index</label>
+                        <input type="number" step="0.01" class="form-control" id="bmi" name="bmi" required>
+                    </div>
+                  </div>
+                  </div>
+
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="gender" class="gender" name="gender">Gender</label>
+                        <select class="gender" id="gender" name="gender" aria-label="Gender" required>
+                            <option value= 1>MALE</option>
+                            <option value= 0>FEMALE</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+              
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="heart_disease" class="heart_disease" name="heart_disease">Had Heart Disease ?</label>
+                        <select class="heart_disease" id="heart_disease" name="heart_disease" aria-label="Had Heart Disease ?" required>
+                            <option value= 1>YES</option>
+                            <option value= 0>NO</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+                
+                
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="smoking_status" class="smoking_status" name="smoking_status">Smoking Status</label>
+                        <select class="smoking_status" id="smoking_status" name="smoking_status" aria-label="Smoking Status" required>
+                            <option value= 2>Current Smoker</option>
+                            <option value= 0>Former Smoker</option>
+                            <option value= 1>Never Smoked</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="hypertension" class="hypertension" name="hypertension">Hypertension ?</label>
+                        <select class="hypertension" id="hypertension" name="hypertension" aria-label="hypertension" required>
+                            <option value= 1>YES</option>
+                            <option value= 0>NO</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+              
+                <div class="col-md-6 my-2 d-flex align-items-end justify-content-around">
+                    <button type="submit" step="0.01" class="btn btn-info button" style="background-color:SlateBlue;">Predict</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div>
+         <h1><center> {{predbs}} </center></h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-4859"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Made with&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="../static/833472.png" alt=""></span>&nbsp; by Viraj Prabhu
+        </p>
+      </div></footer>
+  
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>LiverDisease</title>
+    <link rel="stylesheet" href="../static/nicepage.css" media="screen">
+<link rel="stylesheet" href="../static/LiverDisease.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.18.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="LiverDisease">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <section id="prediction-form">
+        <form class="form" style="width: 70%; margin-left : 15%" action="/predict", method="POST">
+            <h1 class="my-3 text-center" style="color:#ff9999;"><b>Liver Disease Predictor</b></h1>
+            <div class="row">
+                <p><h5 style="text-align: center; font-family: Georgia, serif">Please enter your details</h5></p>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                <label for="Age" class="Age">Age</label>
+                        <input type="number" step="1" class="form-control" id="Age" name="Age" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Total_Bilirubin" class="Total_Bilirubin">Total Bilirubin</label>
+                        <input type="number" step="0.01" class="form-control" id="Total_Bilirubin" name="Total_Bilirubin" required>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Direct_Bilirubin" class="Direct_Bilirubin">Direct Bilirubin</label>
+                        <input type="number" step="0.01" class="form-control" id="Direct_Bilirubin" name="Direct_Bilirubin" required>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Alkaline_Phosphotase" class="Alkaline_Phosphotase">Alkaline Phosphotase</label>
+                        <input type="number" step="0.01" class="form-control" id="Alkaline_Phosphotase" name="Alkaline_Phosphotase" required>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Alamine_Aminotransferase" class="Alamine_Aminotransferase">Alamine Aminotransferase</label>
+                        <input type="number" step="0.01" class="form-control" id="Alamine_Aminotransferase" name="Alamine_Aminotransferase" required>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Aspartate_Aminotransferase" class="Aspartate_Aminotransferase">Aspartate Aminotransferase</label>
+                        <input type="number" step="0.01" class="form-control" id="Aspartate_Aminotransferase" name="Aspartate_Aminotransferase" required>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Total_Protiens" class="Total_Protiens">Total Protein</label>
+                        <input type="number" step="0.01" class="form-control" id="Total_Protiens" name="Total_Protiens" required>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Albumin" class="Albumin">Albumin</label>
+                        <input type="number" step="0.01" class="form-control" id="Albumin" name="Albumin" required>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Albumin_and_Globulin_Ratio" class="Albumin_and_Globulin_Ratio">Albumin Globulin Ratio</label>
+                        <input type="number" step="0.01" class="form-control" id="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio" required>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="md-form">
+                        <label for="Gender" class="Gender" name="Gender">Gender</label>
+                        <select class="Gender" id="Gender" name="Gender" aria-label="Gender" required> 
+                            <option value= 1>MALE</option>
+                            <option value= 0>FEMALE</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+        <div class="col-md-6 my-2 d-flex align-items-end justify-content-around">
+                    <button type="submit" step="0.01" class="btn btn-info button"style="background-color:#ff9999;">Predict</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div>
+         <h1><center> {{pred}} </center></h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-4859"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Made with&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="../static/833472.png" alt=""></span>&nbsp; by Viraj Prabhu
+        </p>
+      </div></footer>
+  
+</body></html>
