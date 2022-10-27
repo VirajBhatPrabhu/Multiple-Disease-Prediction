@@ -29,8 +29,10 @@ To support human providers by enabling quicker service, diagnosing patients, and
 
 ### Stills From The App 
 
-{{< figure src="/Images/Screenshot (22).png">}}
-{{< figure src="/Images/Screenshot (23).png">}}
-{{< figure src="/Images/Screenshot (24).png">}}
+<img src="https://github.com/VirajBhatPrabhu/Multiple-Disease-Prediction/blob/main/Images/Screenshot%20(22).png" alt="img1" style="width:700px;height:500px;">
+<img src="https://github.com/VirajBhatPrabhu/Multiple-Disease-Prediction/blob/main/Images/Screenshot%20(23).png" alt="img2" style="width:700px;height:500px;">
+<img src="https://github.com/VirajBhatPrabhu/Multiple-Disease-Prediction/blob/main/Images/Screenshot%20(24).png" alt="img3" style="width:700px;height:500px;">
+
+
 
 
