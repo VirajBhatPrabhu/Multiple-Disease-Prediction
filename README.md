@@ -29,8 +29,8 @@ To support human providers by enabling quicker service, diagnosing patients, and
 
 ### Stills From The App 
 
-{{< figure src="images/Screenshot (22).png">}}
-{{< figure src="images/Screenshot (23).png">}}
-{{< figure src="images/Screenshot (24).png">}}
+{{< figure src="Images/Screenshot (22).png">}}
+{{< figure src="Images/Screenshot (23).png">}}
+{{< figure src="Images/Screenshot (24).png">}}
 
 
